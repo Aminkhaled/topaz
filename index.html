@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Topaz Club</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="img-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="text-background">
+                    <p>
+                        If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work,
+                        but rather teach them to long for the endless immensity of the sea.                    </p>
+                </div>
+<!--                text background-->
+            </div>
+<!--            col 12-->
+        </div>
+<!--        row -->
+    </div>
+<!--    container-->
+</section>
+<!--images background-->
+<section class="topaz-player">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+               <div class="player-text">
+                   <h2>
+                       What is Lorem Ipsum?
+                   </h2>
+                   <p>
+                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                   </p>
+                   <p>
+                       It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                   </p>
+               </div>
+                <div class="singer-caption">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img-singer">
+                                <img src="images/7.jpg" alt="singer" class="rounded-circle">
+                            </div>
+<!--                            img singer-->
+                        </div>
+<!--                        col-md-4 -->
+                        <div class="col-md-8">
+                            <div class="singer-text">
+                                <h2>
+                                    Mohamed Monier
+                                </h2>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+                                </p>
+                            </div>
+                        </div>
+<!--                        col-md-8 -->
+                    </div>
+                </div>
+            </div>
+<!--            col-md-6-->
+            <div class="col-md-6">
+                <div class="main">
+                    <!-- top section -->
+                    <div class="top_section">
+                        <h5>Topaz Playlist&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
+                    </div>
+
+
+                    <div class="tracks">
+
+                        <!-- list of song will add here from 'song_list.js' file -->
+
+                        <!-- small music player -->
+                        <div class="small_music_player">
+                            <div class="s_player_img">
+                                <div class="playing_img">
+                                    <img src="images/1.jpg" alt="">
+                                </div>
+
+                                <!-- wave animation part -->
+                                <div class="wave_animation">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </div>
+                            </div>
+
+                            <div class="song_detail">
+                                <p id="song_name">Make Me Move</p>
+                                <p id="artist_name">NoCopyrightSounds [NCS]</p>
+                            </div>
+                            <i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
+                        </div>
+
+
+                        <!--  popup music player part -->
+                        <div class="popup_music_player">
+                            <div class="top">
+                                <p>Now Playing</p>
+                                <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+                            </div>
+
+                            <div class="song_img">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+
+                            <div class="song_description">
+                                <h3 id="current_track_name">Make Me Move</h3>
+                                <p id="current_singer_name">NoCopyrightSounds [NCS]</p>
+                            </div>
+
+                            <div class="controlls">
+                                <div class="progress_part">
+                                    <input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+                                    <div class="durations">
+                                        <p id="current_duration">0:00</p>
+                                        <p id="total_duration">0:00</p>
+                                    </div>
+
+                                </div>
+
+                                <!-- controlls btn's -->
+                                <div class="controlls_btns">
+                                    <button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                                    <button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+                                    <button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            <!--            col-md-6-->
+        </div>
+<!--        row -->
+    </div>
+<!--    container -->
+</section>
+
+<section class="section">
+    <div class="blur-img"></div>
+    <div class="blur-img-over"></div>
+    <div class="video-container">
+        <div class="wrap-rel">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="video-text text-center pt-3 pb-3">
+                            <h2>
+                                Watch Our last Event and Enjoy
+                            </h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="video-section">
+                            <figure class="vimeo">
+                                <a href="https://player.vimeo.com/video/233536312" class="">
+                                    <img src="images/topazClub.jpg" alt="image"/>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Page cursor
+================================================== -->
+
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+<!-- Link to page
+  ================================================== -->
+<!-- ======= Header ======= -->
+<section id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+        <h1>Our New Event </h1>
+        <h2>We're working hard to improve our Events and we'll ready to launch after</h2>
+        <div class="countdown d-flex justify-content-center" data-count="2023/12/5">
+            <div>
+                <h3>%d</h3>
+                <h4>Days</h4>
+            </div>
+            <div>
+                <h3>%h</h3>
+                <h4>Hours</h4>
+            </div>
+            <div>
+                <h3>%m</h3>
+                <h4>Minutes</h4>
+            </div>
+            <div>
+                <h3>%s</h3>
+                <h4>Seconds</h4>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <h4>Subscribe now to get the latest updates!</h4>
+            <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+                <div class="subscribe-form">
+                    <input type="email" name="email"><input type="submit" value="Subscribe">
+                </div>
+                <div class="mt-2">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your notification request was sent. Thank you!</div>
+                </div>
+            </form>
+        </div>
+
+        <div class="social-links text-center">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+</section><!-- End #header -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/song_list.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
